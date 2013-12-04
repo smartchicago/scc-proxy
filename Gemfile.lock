@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: git://github.com/gregbell/active_admin.git
-  revision: 9b817be21b14a41d83b8ad5ab4f316c2c30ba164
+  revision: 388ed07e477af5f5644d0c30cd45b4377c886dd7
   specs:
     activeadmin (1.0.0.pre)
       arbre (~> 1.0)
@@ -21,6 +21,13 @@ GIT
       rails (>= 3.2, < 4.1)
       ransack (~> 1.0)
       sass-rails
+
+GIT
+  remote: git://github.com/smartchicago/google_business_api_url_signer.git
+  revision: abbc098cdd9cba5aaada7fbaa257bae34db827bb
+  specs:
+    google_business_api_url_signer (0.0.1)
+      activesupport (~> 4.0.0)
 
 GEM
   remote: https://rubygems.org/
@@ -212,6 +219,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   figaro
   geocoder!
+  google_business_api_url_signer!
   grape
   jbuilder (~> 1.2)
   jquery-rails

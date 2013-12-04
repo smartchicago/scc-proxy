@@ -35,8 +35,9 @@ gem 'figaro'
 # API
 gem 'grape'
 
-# Geocoder
-gem 'geocoder', github: "alexreisner/geocoder"
+# Google API
+gem 'geocoder', github: 'alexreisner/geocoder'
+gem 'google_business_api_url_signer', github: 'smartchicago/google_business_api_url_signer'
 
 # ActiveAdmin
 gem 'activeadmin', github: 'gregbell/active_admin'
