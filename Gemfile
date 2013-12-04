@@ -42,6 +42,9 @@ gem 'google_business_api_url_signer', github: 'smartchicago/google_business_api_
 # ActiveAdmin
 gem 'activeadmin', github: 'gregbell/active_admin'
 
+# Unicorn
+gem 'unicorn'
+
 # Development and Test
 group :development, :test do
   gem 'sqlite3'
@@ -50,7 +53,6 @@ end
 # Production
 group :production do
   gem 'pg'
-  gem 'rails_12factor'
 end
 
 # Use ActiveModel has_secure_password
