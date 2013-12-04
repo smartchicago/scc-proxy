@@ -47,6 +47,7 @@ gem 'unicorn'
 
 # New Relic
 gem 'newrelic_rpm'
+gem 'new_relic_ping', github: 'smartchicago/new_relic_ping'
 
 # Development and Test
 group :development, :test do

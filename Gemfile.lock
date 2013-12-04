@@ -29,6 +29,13 @@ GIT
     google_business_api_url_signer (0.0.1)
       activesupport (~> 4.0.0)
 
+GIT
+  remote: git://github.com/smartchicago/new_relic_ping.git
+  revision: f39421a94c1dc05124366bf11086e7f3e395ef18
+  specs:
+    new_relic_ping (0.1.1)
+      rails (>= 3.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -225,6 +232,7 @@ DEPENDENCIES
   grape
   jbuilder (~> 1.2)
   jquery-rails
+  new_relic_ping!
   newrelic_rpm
   pg
   rails (= 4.0.1)
