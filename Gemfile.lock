@@ -134,6 +134,7 @@ GEM
     minitest (4.7.5)
     multi_json (1.8.2)
     multi_xml (0.5.5)
+    newrelic_rpm (3.6.0.78)
     orm_adapter (0.5.0)
     pg (0.17.0)
     polyamorous (0.6.4)
@@ -224,6 +225,7 @@ DEPENDENCIES
   grape
   jbuilder (~> 1.2)
   jquery-rails
+  newrelic_rpm
   pg
   rails (= 4.0.1)
   sass-rails (~> 4.0.0)

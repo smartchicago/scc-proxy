@@ -45,6 +45,9 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 # Unicorn
 gem 'unicorn'
 
+# New Relic
+gem 'newrelic_rpm'
+
 # Development and Test
 group :development, :test do
   gem 'sqlite3'
