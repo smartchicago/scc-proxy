@@ -7,7 +7,7 @@ module API
 
     helpers do
       def authenticate!
-        error!("Unauthorized. Invalid token.", 401) unless ApiKey.find_by_access_token(params[:key])
+        error!("Unauthorized. Invalid token.", 401) unless ApiKey.find_by_access_token_and_active(params[:key], true)
       end
     end
 
