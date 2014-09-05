@@ -21,6 +21,30 @@ module API
         Geocoder.search params[:address]
       end
 
+      # Directions
+      get :directions do
+        authenticate!
+
+        # Prepare the query
+        query = params.except(:route_info).merge({
+          client: ENV["GOOGLE_MAPS_CLIENT_ID"],
+          key: nil,
+        })
+
+        # Generate the URI
+        uri = URI::HTTPS.build(
+          host: "maps.googleapis.com",
+          path: "/maps/api/directions/json",
+          query: query.to_query,
+        )
+
+        # Sign the URI
+        signed = GoogleBusinessApiUrlSigner.add_signature(uri, ENV["GOOGLE_MAPS_SECRET_KEY"])
+
+        # Fetch the data
+        JSON.parse(open(signed).read)
+      end
+
       # Distance Matrix
       desc "Provides travel distance and time for a matrix of origins and destinations."
       get :distancematrix do
